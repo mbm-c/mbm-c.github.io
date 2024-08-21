@@ -37,11 +37,12 @@ jobs:
 
       - name: Deploy - Clear old contents
         run: |
-          rm -rf *
+          find . -mindepth 1 -maxdepth 1 ! -name 'dist' ! -name '.git' -exec rm -rf {} +
 
       - name: Deploy - Copy new contents
         run: |
           cp -r dist/* .
+          touch .nojekyll
 
       - name: Deploy - Commit changes
         run: |
