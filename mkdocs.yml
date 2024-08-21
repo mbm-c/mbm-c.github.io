@@ -1,1 +1,14 @@
-site_name: My Docs
+site_name: maneesh.dev
+
+nav:
+  - Home: index.md
+
+plugins: 
+  - rss
+
+theme: 
+  name: material
+  custom_dir: overrides
+
+extra:
+  generator: false
