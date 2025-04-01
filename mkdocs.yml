@@ -1,12 +1,12 @@
-site_name: maneesh.dev
+site_name: test.maneesh.dev
 
 nav:
   - Home: index.md
 
-plugins: 
+plugins:
   - rss
 
-theme: 
+theme:
   name: material
   custom_dir: overrides
 
