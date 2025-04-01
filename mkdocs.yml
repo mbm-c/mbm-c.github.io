@@ -1,10 +1,23 @@
-site_name: test.maneesh.dev
+site_name: Maneesh Babu M
+site_description: Personal blog of Maneesh Babu M
+site_author: Maneesh Babu M
+site_url: https://test.maneesh.dev
 
 nav:
   - Home: index.md
+  - About: about.md
+  - Blog: blog/index.md
 
 plugins:
   - rss
+  - search
+  - blog:
+      blog_toc: true
+      archive_date_format: MMMM yyyy
+      categories_allowed:
+        - Holidays
+        - News
+  - tags
 
 theme:
   name: material
